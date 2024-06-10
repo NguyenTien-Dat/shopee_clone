@@ -1,12 +1,13 @@
 .header {
-     height: 120px;
-     background-image: linear-gradient(0, #fe6433, #f53e2d);
+    height: 120px;
+    background-image: linear-gradient(0, #fe6433, #f53e2d);
 }
 
 .header__navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-height: 4.2rem;
 }
 
 .header__navbar-list {
@@ -18,6 +19,14 @@
     margin: 0 8px;
     position: relative;
     min-height: 26px;
+}
+
+.header__navbar-item--qr:hover .header__qr {
+    display: block;
+}
+
+.header__navbar-item--language:hover .header__language {
+    display: block;
 }
 
 .header__navbar-item-link,
@@ -36,7 +45,7 @@
     cursor: pointer;
 }
 
-.header__navbar-item--strong{
+.header__navbar-item--strong {
     font-weight: 500;
 }
 
@@ -67,4 +76,104 @@
 .header__navbar-item-disable {
     cursor: auto;
     color: var(--white-color);
+}
+
+/* Header QR code */
+
+.header__qr {
+    background-color: var(--white-color);
+    width: 184px;
+    height: 246px;
+    position: absolute;
+    left: 0;
+    top: 120%;
+    border-radius: 2px;
+    display: none;
+    animation: fadeIn ease-in 0.3s;
+}
+
+.header__qr::before {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    top: -12px;
+    left: 0;
+    content: "";
+    display: block;
+}
+
+.header__qr-img {
+    width: 100%;
+    border-radius: 2px;
+}
+
+.header__qr-apps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__qr-link:last-child,
+.header__qr-link:first-child {
+    margin-left: 12px;
+    margin-top: 6px;
+}
+
+.header__qr-link:nth-child(2) {
+    margin-right: 12px;
+    margin-top: 6px;
+}
+
+.header__qr-download-img {
+    height: 16px;
+}
+
+/* Language block */
+.header__navbar-item--language {
+    position: relative;
+}
+
+.header__language-item {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--white-color);
+    width: 184px;
+    height: 76px;
+    position: absolute;
+    right: 0;
+    top: 120%;
+    border-radius: 2px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__language--item:hover {
+    color: #fe6433;
+}
+
+.header__language-item::before {
+    position: absolute;
+    top: -8px;
+    left: 62%;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 8px solid var(--white-color);
+}
+
+.header__language--item {
+    background-color: var(--white-color);
+    color: #333;
+    width: 100%;
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: 8px;
+}
+
+.header__language {
+    display: none;
 }
