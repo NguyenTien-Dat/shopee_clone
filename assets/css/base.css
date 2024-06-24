@@ -62,7 +62,6 @@ html {
 }
 
 .modal__body {
-    background-color: var(--white-color);
     margin: auto;
     position: relative;
     z-index: 1;
