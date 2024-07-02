@@ -21,6 +21,7 @@ html {
     box-sizing: border-box;
 }
 
+/* Responsive */
 .grid {
     width: 1200px;
     max-width: 100%;
@@ -34,6 +35,17 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -12px;
+}
+/* Test */
+.grid__column-2 {
+    padding: 0 12px;
+    width: 16.6667%;
+}
+
+.grid__column-10 {
+    padding: 0 12px;
+    width: 83.3332%;
 }
 
 /* Animation */
@@ -143,3 +155,6 @@ html {
     cursor: default;
     background-color: #666;
 }
+
+/* --------------------------- End header------------------------------------- */
+
