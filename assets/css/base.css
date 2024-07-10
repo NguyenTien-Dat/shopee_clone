@@ -4,6 +4,7 @@
     --black-color: #000;
     --text-color: #333;
     --border-color: #d3d3d3;
+    --star-color: #ffba1d;
 
     --header-height: 120px;
     --navbar-height: 34px;
@@ -35,16 +36,21 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -12px;
+    margin: 0 -5px;
 }
 
 .grid__column-2 {
-    padding: 0 12px;
+    padding: 0 5px;
     width: 16.6667%;
 }
 
+.grid__column-2-4 {
+    padding: 0 5px;
+    width: 20%;
+}
+
 .grid__column-10 {
-    padding: 0 12px;
+    padding: 0 5px;
     width: 83.3332%;
 }
 
