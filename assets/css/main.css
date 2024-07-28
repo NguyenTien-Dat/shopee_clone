@@ -1348,3 +1348,18 @@ i.home-product-item__like-icon-fill {
     color: transparent;
     text-decoration: none;
 }
+
+.copyright {
+    display: flex;
+    border-top: 1px solid var(--border-color);
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 48px 0;
+}
+
+.copyright p {
+    font-size: 1.4rem;
+    margin: 0;
+    color: #585858;
+}
