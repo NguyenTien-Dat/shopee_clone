@@ -182,6 +182,15 @@
 
                 <!-- Header with search -->
                 <div class="header-with-search">
+                    <div class="header__mobile-checkbox">
+                        <label for="mobile-category-checkbox" class="header__mobile-category">
+                            <i class="header__mobile-category-icon fas fa-list"></i>
+                        </label>
+    
+                        <label for="mobile-search-checkbox" class="header__mobile-search">
+                            <i class="fas fa-search header__mobile-search-icon"></i>
+                        </label>
+                    </div>
                     <div class="header__logo hide-on-tablet">
                         <a href="/" class="header__logo-link">
                             <svg viewBox="0 0 192 65" class="header__logo-img">
@@ -193,6 +202,9 @@
                             </svg>
                         </a>
                     </div>
+
+                    <input type="checkbox"  id="mobile-category-checkbox" class="header__category-checkbox">
+                    <input type="checkbox"  id="mobile-search-checkbox" class="header__search-checkbox">
 
                     <div class="header__search">
                         <div class="header__search-input-wrap">
@@ -311,8 +323,8 @@
 
         <div class="app__container">
             <div class="grid wide">
-                <div class="grid__row app__content">
-                    <div class="grid__column-2">
+                <div class="row sm-gutter app__content">
+                    <div class="col l-2">
                         <nav class="category">
                             <h3 class="category__heading">
                                 <i class="category__heading-icon fas fa-list"></i>
@@ -341,7 +353,7 @@
                         </nav>
                     </div>
 
-                    <div class="grid__column-10">
+                    <div class="col l-10 m-12 c-12">
                         <div class="home-filter hide-on-mobile-tablet">
                             <span class="home-filter__label">Sắp xếp theo</span>
                             <button class="home-filter__btn btn btn--primary">Phổ Biến</button>
@@ -377,10 +389,10 @@
                         </div>
 
                         <div class="home-product">
-                            <div class="grid__row">
+                            <div class="row sm-gutter">
                                 <!-- Product item -->
 
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img"
                                             style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-luj7idhiai363c);">
@@ -418,7 +430,7 @@
                                     </a>
                                 </div>
 
-                                <div class="grid__column-2-4 ">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img"
                                             style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-luj7idhiai363c);">
@@ -455,7 +467,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4 ">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img"
                                             style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-luj7idhiai363c);">
@@ -492,7 +504,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4 ">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img"
                                             style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-luj7idhiai363c);">
@@ -529,7 +541,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4 ">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img"
                                             style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-luj7idhiai363c);">
@@ -566,7 +578,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4 ">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img"
                                             style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-luj7idhiai363c);">
@@ -603,7 +615,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4 ">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img"
                                             style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-luj7idhiai363c);">
@@ -640,7 +652,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4 ">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img"
                                             style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-luj7idhiai363c);">
@@ -677,7 +689,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4 ">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img"
                                             style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-luj7idhiai363c);">
@@ -714,7 +726,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4 ">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img"
                                             style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-luj7idhiai363c);">
@@ -812,8 +824,8 @@
 
         <footer class="footer">
             <div class="grid wide">
-                <div class="grid__row">
-                    <div class="grid__column-2-4">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">CHĂM SÓC KHÁCH HÀNG</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -851,7 +863,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">VỀ SHOPEE</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -883,7 +895,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">THANH TOÁN</h3>
                         <div class="footer__payment">
                             <img src="assets/img/footer/visa.png" alt="" class="footer__payment-img">
@@ -910,7 +922,7 @@
                             <img src="assets/img/footer/ahamove.png" alt="" class="footer__transport-img">
                         </div>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">THEO DÕI CHÚNG TÔI TRÊN</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -933,7 +945,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">TẢI ỨNG DỤNG SHOPEE NGAY THÔI</h3>
                         <div class="footer__download">
                             <img src="assets/img/qr-code-download.png" alt="" class="footer__download-qr">
