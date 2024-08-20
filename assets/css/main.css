@@ -1031,7 +1031,6 @@
 }
 
 .category {
-    display: block;
     background-color: var(--white-color);
     border-radius: 2px;
 }
@@ -1112,9 +1111,9 @@
     margin-right: 12px;
 }
 
-/* .selection-input__item {
-
-} */
+.selection-input__list {
+    z-index: 5;
+ }
 
 .home-filter__paging {
     display: flex;
@@ -1437,6 +1436,7 @@ i.home-product-item__like-icon-fill {
     align-items: center;
     margin-top: 20px;
     padding: 48px 0;
+    text-align: center;
 }
 
 .copyright p {
